@@ -18,7 +18,7 @@
 
 
 
-#define USE_UIKIT_DYNAMICS      NO
+#define USE_UIKIT_DYNAMICS      YES
 
 
 

@@ -19,13 +19,9 @@
     return self;
 }
 
-/*
-// Only override drawRect: if you perform custom drawing.
-// An empty implementation adversely affects performance during animation.
-- (void)drawRect:(CGRect)rect
+- (void)setFrame:(CGRect)frame
 {
-    // Drawing code
+    [super setFrame:CGRectIntegral(frame)];
 }
-*/
 
 @end

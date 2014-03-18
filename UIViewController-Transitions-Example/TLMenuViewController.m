@@ -7,7 +7,7 @@
 //
 
 #import "TLMenuViewController.h"
-
+#import "TLMenuView.h"
 #import "TLMenuInteractor.h"
 
 @interface TLMenuViewController ()
@@ -23,6 +23,11 @@
         _panTarget = panTarget;
     }
     return self;
+}
+
+- (void)loadView
+{
+    self.view = [[TLMenuView alloc] initWithFrame:[UIScreen mainScreen].bounds];
 }
 
 - (void)viewDidLoad

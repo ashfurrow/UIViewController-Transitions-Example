@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		30ABCB0918D8ECD500AF6F32 /* TLMenuView.m in Sources */ = {isa = PBXBuildFile; fileRef = 30ABCB0818D8ECD500AF6F32 /* TLMenuView.m */; };
 		5E6543B2179DAD4100ED0C76 /* Reveal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E6543B1179DAD4100ED0C76 /* Reveal.framework */; };
 		5E6543B4179DAD6400ED0C76 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E6543B3179DAD6400ED0C76 /* CFNetwork.framework */; };
 		5E6543B6179DAD6900ED0C76 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E6543B5179DAD6900ED0C76 /* QuartzCore.framework */; };
@@ -42,6 +43,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		30ABCB0718D8ECD500AF6F32 /* TLMenuView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TLMenuView.h; sourceTree = "<group>"; };
+		30ABCB0818D8ECD500AF6F32 /* TLMenuView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TLMenuView.m; sourceTree = "<group>"; };
 		5E6543B1179DAD4100ED0C76 /* Reveal.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Reveal.framework; sourceTree = "<group>"; };
 		5E6543B3179DAD6400ED0C76 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
 		5E6543B5179DAD6900ED0C76 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
@@ -112,6 +115,8 @@
 				5E8B4B871790454A006BFAB2 /* TLDetailViewController.m */,
 				5E67527117985B6D00601F42 /* TLMenuViewController.h */,
 				5E67527217985B6D00601F42 /* TLMenuViewController.m */,
+				30ABCB0718D8ECD500AF6F32 /* TLMenuView.h */,
+				30ABCB0818D8ECD500AF6F32 /* TLMenuView.m */,
 			);
 			name = "View Controllers";
 			sourceTree = "<group>";
@@ -303,6 +308,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				30ABCB0918D8ECD500AF6F32 /* TLMenuView.m in Sources */,
 				5E8B4B851790454A006BFAB2 /* TLMasterViewController.m in Sources */,
 				5E6543BB179EB77000ED0C76 /* TLMenuDynamicInteractor.m in Sources */,
 				5E6752691798570100601F42 /* TLTransitionAnimator.m in Sources */,
