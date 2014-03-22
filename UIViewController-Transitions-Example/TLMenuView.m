@@ -19,9 +19,13 @@
     return self;
 }
 
-- (void)setFrame:(CGRect)frame
+- (void)setCenter:(CGPoint)center
 {
-    [super setFrame:CGRectIntegral(frame)];
+    if (center.x > 160) {
+        center.x = 160;
+    }
+    
+    [super setCenter:center];
 }
 
 @end
