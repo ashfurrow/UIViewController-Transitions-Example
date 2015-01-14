@@ -25,7 +25,7 @@
     if (self.presenting) {
         fromViewController.view.userInteractionEnabled = NO;
         
-        [transitionContext.containerView addSubview:fromViewController.view];
+        //[transitionContext.containerView addSubview:fromViewController.view]; // iOS 8
         [transitionContext.containerView addSubview:toViewController.view];
         
         CGRect startFrame = endFrame;
@@ -43,8 +43,8 @@
     else {
         toViewController.view.userInteractionEnabled = YES;
         
-        [transitionContext.containerView addSubview:toViewController.view];
-        [transitionContext.containerView addSubview:fromViewController.view];
+        //[transitionContext.containerView addSubview:toViewController.view]; // iOS 8
+        //[transitionContext.containerView addSubview:fromViewController.view]; // iOS 8
         
         endFrame.origin.x += 320;
         

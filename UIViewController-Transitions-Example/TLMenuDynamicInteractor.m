@@ -219,7 +219,7 @@
         
         if (self.presenting) {
             // The order of these matters – determines the view hierarchy order.
-            [transitionContext.containerView addSubview:fromViewController.view];
+            //[transitionContext.containerView addSubview:fromViewController.view]; // iOS 8
             [transitionContext.containerView addSubview:toViewController.view];
             
             startFrame.origin.x -= CGRectGetWidth([[transitionContext containerView] bounds]);
@@ -240,8 +240,8 @@
             [self.animator addBehavior:itemBehaviour];
         }
         else {
-            [transitionContext.containerView addSubview:toViewController.view];
-            [transitionContext.containerView addSubview:fromViewController.view];
+            //[transitionContext.containerView addSubview:toViewController.view]; // iOS 8
+            //[transitionContext.containerView addSubview:fromViewController.view]; // iOS 8
             
             endFrame.origin.x -= CGRectGetWidth(self.transitionContext.containerView.bounds);
             
@@ -284,14 +284,14 @@
     if (self.presenting)
     {
         // The order of these matters – determines the view hierarchy order.
-        [transitionContext.containerView addSubview:fromViewController.view];
+        //[transitionContext.containerView addSubview:fromViewController.view]; // iOS 8
         [transitionContext.containerView addSubview:toViewController.view];
         
         frame.origin.x -= CGRectGetWidth([[transitionContext containerView] bounds]);
     }
     else {
-        [transitionContext.containerView addSubview:toViewController.view];
-        [transitionContext.containerView addSubview:fromViewController.view];
+        //[transitionContext.containerView addSubview:toViewController.view]; // iOS 8
+        //[transitionContext.containerView addSubview:fromViewController.view]; // iOS 8
     }
     
     toViewController.view.frame = frame;
