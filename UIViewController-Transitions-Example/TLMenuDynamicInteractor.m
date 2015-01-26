@@ -65,9 +65,7 @@
                 [self.parentViewController presentViewController:viewController animated:YES completion:nil];
             }
             else {
-                if (!self.presenting) {
-                    [self.parentViewController dismissViewControllerAnimated:YES completion:nil];
-                }
+                [self.parentViewController dismissViewControllerAnimated:YES completion:nil];
             }
         }
     }
