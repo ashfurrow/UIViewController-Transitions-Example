@@ -65,7 +65,9 @@
                 [self.parentViewController presentViewController:viewController animated:YES completion:nil];
             }
             else {
-                [self.parentViewController dismissViewControllerAnimated:YES completion:nil];
+                if (!self.presenting) {
+                    [self.parentViewController dismissViewControllerAnimated:YES completion:nil];
+                }
             }
         }
     }
@@ -278,6 +280,7 @@
     UIViewController *toViewController = [transitionContext viewControllerForKey:UITransitionContextToViewControllerKey];
     
     fromViewController.view.userInteractionEnabled = NO;
+    toViewController.view.userInteractionEnabled = NO;
     
     CGRect frame = [[transitionContext containerView] bounds];
     
